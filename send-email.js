@@ -21,19 +21,15 @@ r2.question("enter Email:",function(email){
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'ayushpatel1801@gnu.ac.in',
-      pass: 'gnu@12112000'
+      user: // type your sender email
+      pass: //type password
     }
   });
   
   var mailOptions = {
-      /*
-    from: 'ayushpatel1801@gnu.ac.in',
-    to: 'rakupatel219@gmail.com',
-    subject: 'send by node',
-    text: `this email send by node.js `*/
+      
 
-    from: 'ayushpatel1801@gnu.ac.in',
+    from: //sender email,
     to: email,
     subject: subject,
     text: message
